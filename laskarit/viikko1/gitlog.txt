@@ -1,0 +1,87 @@
+melting8snowman@HARRIXPS15:/mnt/c/Users/niemi/ot_viikko1/tiedostoja$ git log --stat | cat
+commit d0dfc2db3303de1ad144e69a6b641614b0321b7a
+Author: Harri Nieminen <melting8snowman@gmail.com>
+Date:   Tue Nov 3 16:10:25 2020 +0800
+
+    viimeinen
+
+ tiedostoja/file2             | 0
+ tiedostoja/{file1 => file22} | 0
+ tiedostoja/file3             | 2 ++
+ 3 files changed, 2 insertions(+)
+
+commit 48a19215484fecaf819463d00ccc29be7afec16f
+Author: Harri Nieminen <melting8snowman@gmail.com>
+Date:   Tue Nov 3 16:00:50 2020 +0800
+
+    tied lisätty
+
+ tiedostoja/file1 | 0
+ tiedostoja/file2 | 0
+ tiedostoja/file3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 58ba91a5dc3431f0c6a1a1e55b1b596f6a0d79e9
+Author: Harri Nieminen <melting8snowman@gmail.com>
+Date:   Tue Nov 3 15:58:12 2020 +0800
+
+    tetstiä lisätty2
+
+ tiedosto.txt | 17 +++++++++++++++--
+ 1 file changed, 15 insertions(+), 2 deletions(-)
+
+commit a12ad46e140b5021dc9b9bb3e9a7ad3e2b2f741c
+Author: Harri Nieminen <melting8snowman@gmail.com>
+Date:   Tue Nov 3 15:55:43 2020 +0800
+
+    tetstiä lisätty
+
+ tiedosto.txt | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+
+commit dd22f08cfa223af18c80a999ad3f45f3d5075fba
+Author: Harri Nieminen <melting8snowman@gmail.com>
+Date:   Tue Nov 3 15:39:00 2020 +0800
+
+    uusi kansio stuff
+
+ stuff/huuhaa.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 1d41bc8ed71be231864716325aeda5268673ada2
+Author: Harri Nieminen <melting8snowman@gmail.com>
+Date:   Tue Nov 3 15:37:42 2020 +0800
+
+    toka ja kolmas
+
+ kolmas.txt | 1 +
+ toinen.txt | 1 +
+ 2 files changed, 2 insertions(+)
+
+commit 4937fb48b50f5d5bd45ec912dbc87b2a4108b6d8
+Author: Harri Nieminen <melting8snowman@gmail.com>
+Date:   Tue Nov 3 15:36:30 2020 +0800
+
+    kolmas luotu
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit da4f9625f5dc9c804d1a4b9b8f62c6519308cf17
+Author: Harri Nieminen <melting8snowman@gmail.com>
+Date:   Tue Nov 3 15:34:10 2020 +0800
+
+    muutos ja lisäys
+
+ tiedosto.txt | 1 +
+ toinen.txt   | 0
+ 2 files changed, 1 insertion(+)
+
+commit 621ab3efbde627544d5e8e982a2069554c1ebcff
+Author: Harri Nieminen <melting8snowman@gmail.com>
+Date:   Tue Nov 3 15:03:43 2020 +0800
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
