@@ -1,4 +1,4 @@
-** Harjoitustyön vaatimusmäärittely - Ohjelmistotekniikka **
+** Harjoitustyön vaatimusmäärittely, Ohjelmistotekniikka **
 Harri Nieminen
 
 # Jälkiruokareseptigeneraattori
