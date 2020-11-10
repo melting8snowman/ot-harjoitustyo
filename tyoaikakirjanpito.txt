@@ -1,0 +1,5 @@
+Pvm	tunnit	aihe/työ
+9.11.	2	Aiheen suunnittelua, vertailua ja ohjeisiin & Github-tutustumista yms
+9.11	2	SSH:n, SSH-agentin yms kanssa tappelua, uudelleenasennusta yms
+10.11	1	Javan testaamiseen tutustumista ja kokeilua. 
+10.11	2	Aiheen valinta, määrittelydokumentin luominen sekä github-päivitys
