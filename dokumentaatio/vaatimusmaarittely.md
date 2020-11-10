@@ -23,6 +23,7 @@ Jälkiruokaryhmiin kuuluvat ainakin seuraavat:
 Yllämainitun lisäksi käyttäjän tulee voida lisätä hyväksi havaitsemansa jälkiruoka 
 ohjelman tietokantaan ryhmittelyineen, minkä jälkeen lisätyn jälkiruoan tulee 
 olla jatkossa arvottavien reseptien joukossa.
+Lisätoiminnallisuuksia voisivat olla myös ryhmien listaus sekä uuden ryhmän lisääminen.
 
 
 
