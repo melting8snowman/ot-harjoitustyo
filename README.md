@@ -7,3 +7,5 @@
 
 [komentorivi](https://www.github.com/melting8snowman/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
 
+[Harjoitustyön määrittelydokumentti](https://www.github.com/melting8snowman/ot-harjoitustyo/blob/master/dokumentaatio/vaativuusmaarittely.md)
+
