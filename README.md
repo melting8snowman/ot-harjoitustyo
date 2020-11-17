@@ -1,5 +1,5 @@
 # Ohjelmistotekniikka syksy 2020
-** Ohjelmistotekniikan harjoitustyö - Harri Nieminen **
+**Ohjelmistotekniikan harjoitustyö - Harri Nieminen **
 # Jälkiruokareseptigeneraattori
 
 ## Päätoiminnallisuus ##
