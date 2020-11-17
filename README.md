@@ -1,15 +1,30 @@
-# Uusittu README
-** Tässä Boldia **
-## alaotsikko
-* italiccia *
+# Ohjelmistotekniikka syksy 2020
+** Ohjelmistotekniikan harjoitustyö - Harri Nieminen **
+# Jälkiruokareseptigeneraattori
 
-Lista
-- huu
-- haa
+## Päätoiminnallisuus ##
+Sovelluksen pääasiallinen tehtävä on tarjota käyttäjälle 
+kyseiseen päivään sopiva jälkiruokaresepti. 
+Reseptit jaetaan muutamaan luokkaan ja ohjelman tulee kysyä 
+käyttäjältä päivän fiiliksen mukaista jälkiruokaryhmää.
+Tämän jälkeen ohjelma generoi/arpoo käyttäjälle oikeaan ryhmään 
+kuuluvan jälkiruoan tehtäväksi ja nautittavaksi.
 
-[Gitlog](https://www.github.com/melting8snowman/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
+## Reseptiryhmät ##
+Jälkiruokaryhmiin kuuluvat ainakin seuraavat: 
+-	Kirpeä
+-	Raikas
+-	Viileä
+-	Suklainen
 
-[Komentorivi](https://www.github.com/melting8snowman/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
+## Lisätoiminnot ##
+Yllämainitun lisäksi käyttäjän tulee voida lisätä hyväksi havaitsemansa jälkiruoka 
+ohjelman tietokantaan ryhmittelyineen, minkä jälkeen lisätyn jälkiruoan tulee 
+olla jatkossa arvottavien reseptien joukossa.
+Lisätoiminnallisuuksia voisivat olla myös ryhmien listaus sekä uuden ryhmän lisääminen.
 
+## Dokumentaatio ##
 [Harjoitustyön määrittelydokumentti](https://www.github.com/melting8snowman/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
+
+[Työaikakirjanpito](https://github.com/melting8snowman/ot-harjoitustyo/blob/master/tyoaikakirjanpito.txt)
 
