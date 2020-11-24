@@ -3,5 +3,7 @@ Pvm	tunnit	aihe/työ
 9.11	2	SSH:n, SSH-agentin yms kanssa tappelua, uudelleenasennusta yms
 10.11	1	Javan testaamiseen tutustumista ja kokeilua. 
 10.11	2	Aiheen valinta, määrittelydokumentin luominen sekä github-päivitys
-16.11 2 Projektin ja luokkien luominen ym (ja Javan muistelua)
-17.11 3 Testauksen kanssa tappelua
+16.11 	2 	Projektin ja luokkien luominen ym (ja Javan muistelua)
+17.11 	3 	Testauksen kanssa tappelua
+23.11	3	Harjoitustyön koodien rakentelua ja englanninnosta	
+24.11	6	Javan tiedostonkäsittelyn rakentamista, testaamisen kehittämistä, Checkstyle yms
