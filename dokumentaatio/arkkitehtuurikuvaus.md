@@ -3,7 +3,7 @@
 # Jälkiruokareseptigeneraattori
 
 # Rakenne #
-<img src="https://raw.githubusercontent.com/mluukkai/ohjelmistotekniikka-kevat2019/master/web/images/l-11.png" width="160">
+<img src="dokumentaatio/rakenne.png" width="160">
 
 Ohjelma käyttää yksinkertaista tekstikäyttöliittymää, sovelluslogiikan lisäksi on käytössä myös erillinen tietokannan alustustiedosto.
 
