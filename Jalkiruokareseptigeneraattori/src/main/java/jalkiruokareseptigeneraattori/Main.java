@@ -1,5 +1,7 @@
 package jalkiruokareseptigeneraattori;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -7,10 +9,18 @@ public class Main {
 
         Recipebook jalkkarit = new Recipebook();
 
-        Recipe pulla = new Recipe("Pulla", "leivonnaiset");
-        jalkkarit.addRecipeToBook(pulla);
+        //Recipe pulla = new Recipe("Pulla", "leivonnaiset");
+        //jalkkarit.addRecipeToBook(pulla);
         jalkkarit.addRecipeToBook(new Recipe("Pirtelö", "viilea"));
         //System.out.println(jalkkarit.getRecipeFromBook(1));
+        //jalkkarit.getNumberOfRecipes();
+        //jalkkarit.printGroups();
+        //System.out.println(jalkkarit.getRandomRecipeFromGroup(1));
+        //System.out.println(jalkkarit.getRandomRecipe());
+
+        Scanner ipReader = new Scanner(System.in);
+        TextUI UI = new TextUI(jalkkarit, ipReader);
+        UI.start();
     }
 
 }

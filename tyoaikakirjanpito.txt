@@ -7,3 +7,4 @@ Pvm	tunnit	aihe/työ
 17.11 	3 	Testauksen kanssa tappelua
 23.11	3	Harjoitustyön koodien rakentelua ja englanninnosta	
 24.11	6	Javan tiedostonkäsittelyn rakentamista, testaamisen kehittämistä, Checkstyle yms
+1.12	7	Ohjelman kehittämistä, githubin asetuksia, testaamista yms

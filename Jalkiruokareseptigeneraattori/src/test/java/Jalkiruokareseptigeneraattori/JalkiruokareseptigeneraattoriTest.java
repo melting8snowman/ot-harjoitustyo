@@ -30,7 +30,7 @@ public class JalkiruokareseptigeneraattoriTest {
     @Test
     public void konstruktoriLuoReseptin() {
         Recipe testiresepti = new Recipe("pulla", "leivonnaiset");
-        String answer = String.valueOf(testiresepti.getGroup());
+        String answer = String.valueOf(testiresepti.getGroupName());
         assertEquals("leivonnaiset", answer);
     }
 

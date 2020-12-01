@@ -10,18 +10,47 @@ public class Recipe {
      */
     public String name;
     public Integer ID;
-    public String group;
+    public String groupName;
+    public Integer groupID;
     public String ingredients;
     public Integer preparation;
+    public String imageUrl;
 
     // generate ID
     private static AtomicInteger uniqueId = new AtomicInteger();
     private int id;
 
-    public Recipe(String nimi, String group) {
+    public Recipe(String nimi, String groupName, String ingredients,
+            Integer preparation, String imageUrl) {
         this.name = nimi;
-        this.group = group;
+        this.groupName = groupName;
+        this.ingredients = ingredients;
+        this.preparation = preparation;
+        this.imageUrl = imageUrl;
         this.ID = uniqueId.getAndIncrement();
+    }
+
+    public Recipe(String nimi, String groupName, String ingredients,
+            Integer preparation) {
+        this.name = nimi;
+        this.groupName = groupName;
+        this.preparation = 0;
+        this.ID = uniqueId.getAndIncrement();
+    }
+
+    public Recipe(String nimi, String groupName) {
+        this.name = nimi;
+        this.groupName = groupName;
+        this.preparation = 0;
+        this.ID = uniqueId.getAndIncrement();
+    }
+
+    public Integer getGroupID() {
+        return groupID;
+    }
+
+    public void setGroupID(Integer groupID) {
+        this.groupID = groupID;
     }
 
     public void setIngredients(String ing) {
@@ -32,13 +61,13 @@ public class Recipe {
         return ingredients;
     }
 
-    public String getGroup() {
-        return group;
+    public String getGroupName() {
+        return groupName;
     }
 
-    public String changeGroup(String group) {
-        this.group = group;
-        return "Group of recipe changed to " + this.group;
+    public String changeGroup(String groupName) {
+        this.groupName = groupName;
+        return "Group of recipe changed to " + this.groupName;
     }
 
     public Integer getPreparation() {
@@ -55,16 +84,24 @@ public class Recipe {
 
     @Override
     public String toString() {
+        String returnMsg = System.lineSeparator()
+                + "Recipe: " + this.name + System.lineSeparator()
+                + "Group: " + this.groupName + System.lineSeparator();
 
-        if (this.preparation == 0) {
-            return "Recipe: " + this.name + System.lineSeparator()
-                 + "Group: " + this.group + System.lineSeparator();
+        if (this.preparation > 0) {
+            returnMsg = returnMsg
+                    + "Time required for preparation: " + this.preparation
+                    + System.lineSeparator();
 
-        } else {
-            return "Recipe: " + this.name + System.lineSeparator()
-                    + "Group: " + this.group + System.lineSeparator()
-                    + "Time required for preparation: " + this.preparation;
         }
-        
+        if (!this.ingredients.isEmpty()) {
+            returnMsg = returnMsg
+                    + "Cooking ingredients: " + this.ingredients
+                    + System.lineSeparator();
+        }
+        returnMsg = returnMsg + System.lineSeparator();
+
+        return returnMsg;
+
     }
 }
