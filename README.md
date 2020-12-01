@@ -12,7 +12,7 @@ kuuluvan jälkiruoan tehtäväksi ja nautittavaksi.
 
 ## Reseptiryhmät ##
 Jälkiruokaryhmiin kuuluvat ainakin seuraavat: 
--	Kirpeä
+-	Marjaisa
 -	Raikas
 -	Viileä
 -	Suklainen
