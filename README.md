@@ -28,3 +28,6 @@ Lisätoiminnallisuuksia voisivat olla myös ryhmien listaus sekä uuden ryhmän 
 
 [Työaikakirjanpito](https://github.com/melting8snowman/ot-harjoitustyo/blob/master/tyoaikakirjanpito.txt)
 
+## Releases ##
+[Week5]https://github.com/melting8snowman/ot-harjoitustyo/releases/tag/Week5
+
