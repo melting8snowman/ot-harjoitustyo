@@ -3,7 +3,7 @@
 # Jälkiruokareseptigeneraattori
 
 # Rakenne #
-<img src="https://github.com/melting8snowman/ot-harjoitustyo/dokumentaatio/rakenne.png" width="160">
+<img src="https://raw.githubusercontent.com/melting8snowman/ot-harjoitustyo/dokumentaatio/rakenne.png" width="160">
 
 Ohjelma käyttää yksinkertaista tekstikäyttöliittymää, sovelluslogiikan lisäksi on käytössä myös erillinen tietokannan alustustiedosto.
 
