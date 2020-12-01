@@ -25,6 +25,7 @@ Lisätoiminnallisuuksia voisivat olla myös ryhmien listaus sekä uuden ryhmän 
 
 ## Dokumentaatio ##
 [Harjoitustyön määrittelydokumentti](https://www.github.com/melting8snowman/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
+[Arkkitehtuurikuvaus](https://github.com/melting8snowman/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuurikuvaus.md)
 
 [Työaikakirjanpito](https://github.com/melting8snowman/ot-harjoitustyo/blob/master/tyoaikakirjanpito.txt)
 
