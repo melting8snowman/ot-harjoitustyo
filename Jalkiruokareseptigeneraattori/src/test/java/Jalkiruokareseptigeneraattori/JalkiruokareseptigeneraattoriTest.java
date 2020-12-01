@@ -38,7 +38,7 @@ public class JalkiruokareseptigeneraattoriTest {
     public void RecipePreparation() {
         Recipe testiresepti = new Recipe("pulla", "leivonnaiset");
         Integer aika = testiresepti.getPreparation();
-        assertEquals(new Integer(-1), aika);
+        assertEquals(new Integer(0), aika);
     }
 
     @Test
@@ -69,10 +69,8 @@ public class JalkiruokareseptigeneraattoriTest {
         //Reseptikirja reseptit = new Reseptikirja();
         Recipe res = new Recipe("menujää", "viilea");
         reseptit.addRecipeToBook(res);
-        Recipe ressi;
-        ressi = reseptit.getRecipeFromBook(0);
-        Integer aika = ressi.getPreparation();
-        assertEquals(new Integer(-1), aika);
+        Integer aika = res.getPreparation();
+        assertEquals(new Integer(0), aika);
         //assertEquals("-1", String.valueOf(ressi.getValmistusaika()));
         //assertThat(ressi.getValmistusaika(), aika);
     }
@@ -83,18 +81,31 @@ public class JalkiruokareseptigeneraattoriTest {
         Recipe res = new Recipe("menujää2", "viilea");
         res.setPreparation(200);
         reseptit.addRecipeToBook(res);
-        Recipe ressi;
-        ressi = reseptit.getRecipeFromBook(0);
-        Integer aika = ressi.getPreparation();
-        assertEquals(new Integer(-1), aika);
+        Integer aika = res.getPreparation();
+        assertEquals(new Integer(200), aika);
     }
-    
+
     @Test
     public void changeGroup() {
         String answer = String.valueOf(jalkkari.changeGroup("uusi"));
         assertEquals("Group of recipe changed to uusi", answer);
     }
 
+    @Test
+    public void GroupExists() {
+        assertTrue(reseptit.doesGroupExist(1));
+    }
+
+    @Test
+    public void GroupExists2() {
+        assertFalse(reseptit.doesGroupExist(100));
+    }
+
+    @Test
+    public void RecipeCounts() {
+        String answer = String.valueOf(reseptit.getNumberOfRecipes());
+        assertEquals("5", answer);
+    }
 
     // @Test
     // public void hello() {}

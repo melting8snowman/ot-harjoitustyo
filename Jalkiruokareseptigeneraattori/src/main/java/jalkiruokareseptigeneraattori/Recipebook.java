@@ -69,8 +69,9 @@ public class Recipebook {
         }
     }
 
-    public void getNumberOfRecipes() {
+    public int getNumberOfRecipes() {
         System.out.println("Recipebook contains " + recipes.size() + " recipes");
+        return recipes.size();
     }
 
     public Recipe getRandomRecipeFromGroup(Integer igroupId) {

@@ -27,7 +27,9 @@
             <version>0.8.3</version>
             <configuration>
                 <excludes>
-                    <exclude>jalkiruokareseptigeneraattori/Recipe.java/toString*</exclude>
+                    <exclude>Jalkiruokareseptigeneraattori/jalkiruokareseptigeneraattori/Recipe/toString*</exclude>
+                    <exclude>**/*TextUI.*</exclude>
+                    <exclude>**/*Main.*</exclude>
                 </excludes>
             </configuration>
             <executions>
