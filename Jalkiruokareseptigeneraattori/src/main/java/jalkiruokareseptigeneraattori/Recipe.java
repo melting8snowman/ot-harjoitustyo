@@ -9,9 +9,9 @@ public class Recipe {
      * minutes
      */
     public String name;
-    public Integer ID;
+    public Integer iD;
     public String groupName;
-    public Integer groupID;
+    public Integer groupId;
     public String ingredients;
     public Integer preparation;
     public String imageUrl;
@@ -27,7 +27,7 @@ public class Recipe {
         this.ingredients = ingredients;
         this.preparation = preparation;
         this.imageUrl = imageUrl;
-        this.ID = uniqueId.getAndIncrement();
+        this.iD = uniqueId.getAndIncrement();
     }
 
     public Recipe(String nimi, String groupName, String ingredients,
@@ -35,22 +35,22 @@ public class Recipe {
         this.name = nimi;
         this.groupName = groupName;
         this.preparation = 0;
-        this.ID = uniqueId.getAndIncrement();
+        this.iD = uniqueId.getAndIncrement();
     }
 
     public Recipe(String nimi, String groupName) {
         this.name = nimi;
         this.groupName = groupName;
         this.preparation = 0;
-        this.ID = uniqueId.getAndIncrement();
+        this.iD = uniqueId.getAndIncrement();
     }
 
     public Integer getGroupID() {
-        return groupID;
+        return groupId;
     }
 
-    public void setGroupID(Integer groupID) {
-        this.groupID = groupID;
+    public void setGroupID(Integer groupId) {
+        this.groupId = groupId;
     }
 
     public void setIngredients(String ing) {

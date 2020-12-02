@@ -5,13 +5,13 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class TextUI {
+public class TextUi {
 
     private Scanner ipReader;
     private Recipebook recipes;
     private List<Integer> commands;
 
-    public TextUI(Recipebook recipes, Scanner ipReader) {
+    public TextUi(Recipebook recipes, Scanner ipReader) {
         this.ipReader = ipReader;
         this.recipes = recipes;
         this.commands = new ArrayList<Integer>();
@@ -78,8 +78,8 @@ public class TextUI {
                 Integer newPreparation = ipReader.nextInt();
 
                 try {
-                    Recipe RecipeToAdd = new Recipe(newName, newGrp, newIngredients, newPreparation);
-                    recipes.addRecipeToBook(RecipeToAdd);
+                    Recipe recipeToAdd = new Recipe(newName, newGrp, newIngredients, newPreparation);
+                    recipes.addRecipeToBook(recipeToAdd);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }

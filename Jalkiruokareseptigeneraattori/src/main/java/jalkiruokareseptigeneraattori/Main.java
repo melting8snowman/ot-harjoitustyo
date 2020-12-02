@@ -19,8 +19,8 @@ public class Main {
         //System.out.println(jalkkarit.getRandomRecipe());
 
         Scanner ipReader = new Scanner(System.in);
-        TextUI UI = new TextUI(jalkkarit, ipReader);
-        UI.start();
+        TextUi uI = new TextUi(jalkkarit, ipReader);
+        uI.start();
     }
 
 }

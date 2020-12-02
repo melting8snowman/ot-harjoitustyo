@@ -27,22 +27,22 @@ public class Recipebook {
 
     public Integer addGroup(String igroup) {
         //check if group value exists
-        Integer IDnumber = 0;
+        Integer idNum = 0;
         if (!groups.containsValue(igroup.toLowerCase())) {
             //key does not exist, needs to be created
-            IDnumber = groups.size() + 1;
-            groups.put(IDnumber, igroup.toLowerCase());
-            return IDnumber;
+            idNum = groups.size() + 1;
+            groups.put(idNum, igroup.toLowerCase());
+            return idNum;
         }
-        return this.getGroupID(igroup);
+        return this.getGroupId(igroup);
     }
 
     public Boolean doesGroupExist(Integer searched) {
         return this.groups.containsKey(searched);
     }
 
-    public Integer getGroupID(String igroup) {
-        List< Integer> keys = new ArrayList< Integer>();
+    public Integer getGroupId(String igroup) {
+        List<Integer> keys = new ArrayList<Integer>();
 
         for (Integer key : groups.keySet()) {
             if (groups.get(key).equals(igroup)) {
@@ -78,7 +78,7 @@ public class Recipebook {
         // Create shortlist of recipes of chosen group
         ArrayList<Recipe> shortList = new ArrayList<>();
         for (Recipe res : this.recipes) {
-            if (res.groupID == igroupId) {
+            if (res.groupId == igroupId) {
                 shortList.add(res);
             }
         }
@@ -108,7 +108,7 @@ public class Recipebook {
 
     public void printRecipes(Integer igroup) {
         for (Recipe res : this.recipes) {
-            if (res.groupID == igroup) {
+            if (res.groupId == igroup) {
                 System.out.printf("%s ", res);
             }
         }
@@ -118,7 +118,7 @@ public class Recipebook {
         Integer ctn = 0;
         for (Integer key : groups.keySet()) {
             for (Recipe res : this.recipes) {
-                if (key == res.groupID) {
+                if (key == res.groupId) {
                     ctn += 1;
                 }
             }
@@ -129,37 +129,29 @@ public class Recipebook {
 
     public void initializeRecipes(Recipebook resbook) {
         boolean firstLine = true;
-
         try (Scanner reader = new Scanner(Paths.get("recipes.txt"))) {
-
             while (reader.hasNextLine()) {
-                String row = reader.nextLine();
-                // skip first line
+                String row = reader.nextLine(); // skip first line
                 if (firstLine) {
                     firstLine = false;
                     continue;
                 }
-
-                // skip if empty
-                if (row.isEmpty()) {
+                if (row.isEmpty()) {  // skip if empty
                     continue;
                 }
-
                 String[] col = row.split(Pattern.quote("|"));
                 String nimi = col[0];
                 String group = col[1];
-
                 String ingredients = col[2];
                 int preparation = Integer.valueOf(col[3].replaceAll("\\s+", ""));
                 String image = col[4];
-
-                Recipe newrecipe = new Recipe(nimi, group, ingredients, preparation, image);
+                Recipe newrecipe = new Recipe(nimi, group, ingredients,
+                        preparation, image);
                 resbook.addRecipeToBook(newrecipe);
             }
         } catch (Exception e) {
             System.out.println("Virhe: " + e.getMessage());
         }
-        //System.out.println("Generated recipebook with " + recipes.size() + " recipes");
     }
 
 }
