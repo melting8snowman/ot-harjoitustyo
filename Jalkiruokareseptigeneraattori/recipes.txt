@@ -4,4 +4,5 @@ suklaakeksi|rapeat|jauhot, sokeri, sulkaa, kananmuna, ruokasooda|45|https://www.
 marjahyydyke|marjaisat|marjat, mehu, vesi|200|https://images.cdn.soppa365.fi/rA77SJUig0pDbMKGzRiyqXtjk0Q=/1230x0/smart/soppa365.fi/s3fs-public/recipe_main_media/534d26f7075500.64233985.jpg?itok=JiU_FE_e&timestamp=1488395047
 marjakiisseli|marjaisat|marjat, mehu, vesi, hyydyte, sokeri|40|https://anna.fi/awpo/img/s/f/ruokaohje/947783-marjakiisseli.jpg?w=1000
 suklaamousse|suklaiset|kerma, suklaa|20|https://cdn.valio.fi/mediafiles/09a5453a-3e15-4050-adf7-c636ad70cc51/1000x752-recipe-hero/4x3/suklaamousse.jpg
+mehu|viilea|tiiviste, vesi|5|https://canningwithmehuliisa.files.wordpress.com/2018/07/juice-and-luxardo.jpg
 

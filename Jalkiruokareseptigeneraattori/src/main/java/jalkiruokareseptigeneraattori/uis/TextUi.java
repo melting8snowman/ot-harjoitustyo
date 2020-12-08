@@ -1,22 +1,36 @@
-package jalkiruokareseptigeneraattori;
+package jalkiruokareseptigeneraattori.uis;
 
+import jalkiruokareseptigeneraattori.blogic.Recipe;
+import jalkiruokareseptigeneraattori.blogic.Recipebook;
 import java.util.Scanner;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+/**
+ *
+ * @author niemi
+ */
 public class TextUi {
 
     private Scanner ipReader;
     private Recipebook recipes;
     private List<Integer> commands;
 
+    /**
+     *
+     * @param recipes input value
+     * @param ipReader scanner input value
+     */
     public TextUi(Recipebook recipes, Scanner ipReader) {
         this.ipReader = ipReader;
         this.recipes = recipes;
         this.commands = new ArrayList<Integer>();
     }
 
+    /**
+     *
+     */
     public void start() {
         // UI options
         Integer chosenGrp = 0;
@@ -57,25 +71,36 @@ public class TextUi {
             }
             if (option == 4) {  //list group recipes
                 chosenGrp = this.enterValidGroup(ipReader);
+                //System.out.println(chosenGrp);
                 recipes.printRecipes(chosenGrp);
                 continue;
             }
-
             if (option == 5) {  //list recipebooks details
                 recipes.getNumberOfRecipes();
                 recipes.coutsOfRecipesPerGroup();
             }
-
             if (option == 6) {  //add recipe
                 System.out.println("Creating a new recipe, please add the following details");
                 System.out.print("Name: ");
+                ipReader.nextLine();
                 String newName = ipReader.nextLine();
-                System.out.print("Name or group: ");
+                System.out.print("Name of group: ");
+                //ipReader.nextLine();
                 String newGrp = ipReader.nextLine();
                 System.out.print("List of ingredients: ");
+                //ipReader.nextLine();
                 String newIngredients = ipReader.nextLine();
-                System.out.print("Preparation time in minutes: ");
-                Integer newPreparation = ipReader.nextInt();
+
+                //Integer newPreparation = ipReader.nextInt();
+                Integer newPreparation;
+                do {
+                    System.out.print("Preparation time in minutes: ");
+                    while (!ipReader.hasNextInt()) {
+                        System.out.println("Please choose a number!");
+                        ipReader.next(); // continue
+                    }
+                    newPreparation = ipReader.nextInt();
+                } while (!this.commands.contains(option));
 
                 try {
                     Recipe recipeToAdd = new Recipe(newName, newGrp, newIngredients, newPreparation);
@@ -84,7 +109,6 @@ public class TextUi {
                     e.printStackTrace();
                 }
                 System.out.println("New Recipe " + newName + " created and added to recipebook");
-
                 recipes.getNumberOfRecipes();
                 recipes.coutsOfRecipesPerGroup();
             }
@@ -97,6 +121,11 @@ public class TextUi {
 
     }
 
+    /**
+     *
+     * @param ipReader scanner input value
+     * @return valid group chosen
+     */
     public Integer enterValidGroup(Scanner ipReader) {
         System.out.println("You have the following groups available:");
         this.recipes.printGroups();
@@ -114,11 +143,14 @@ public class TextUi {
                 if (!this.recipes.doesGroupExist(chosen)) {
                     System.out.println("Please choose a valid group. Try again.");
                 }
-            } while (!this.recipes.doesGroupExist(chosen));
+            } while (!this.recipes.doesGroupExist(chosen));  // do until correct
             return chosen;
         }
     }
 
+    /**
+     *
+     */
     public void initOptions() {
         // init text options
         this.commands.clear();

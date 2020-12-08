@@ -8,5 +8,7 @@ Pvm	tunnit	aihe/työ
 23.11	3	Harjoitustyön koodien rakentelua ja englanninnosta	
 24.11	6	Javan tiedostonkäsittelyn rakentamista, testaamisen kehittämistä, Checkstyle yms
 1.12	7	Ohjelman kehittämistä, githubin asetuksia, testaamista yms
+7.12	4	Graphical UI harjottelua
+8.12	14	Javaongelmien kanssa painimista, uudelleen asennusta, Javadoc virheiden, JAVA_HOME -asetusongelmia sekä JDK/JRE - en tiedä mitä tapahtui, mikään ei toiminut enää
 
-== Yht 28 tuntia
+== Yht 46 tuntia
