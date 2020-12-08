@@ -14,8 +14,8 @@ kuuluvan jälkiruoan tehtäväksi ja nautittavaksi.
 Jälkiruokaryhmiin kuuluvat ainakin seuraavat: 
 -	Marjaisa
 -	Raikas
--	Viileä
 -	Suklainen
+- Rapea
 
 ## Lisätoiminnot ##
 Yllämainitun lisäksi käyttäjän tulee voida lisätä hyväksi havaitsemansa jälkiruoka 
@@ -32,4 +32,6 @@ Lisätoiminnallisuuksia voisivat olla myös ryhmien listaus sekä uuden ryhmän 
 
 ## Releases ##
 [Week5](https://github.com/melting8snowman/ot-harjoitustyo/releases/tag/Week5)
+
+[Week6](https://github.com/melting8snowman/ot-harjoitustyo/releases/tag/week6)
 
