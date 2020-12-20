@@ -13,7 +13,6 @@ kuuluvan jälkiruoan tehtäväksi ja nautittavaksi.
 ## Reseptiryhmät ##
 Jälkiruokaryhmiin kuuluvat ainakin seuraavat: 
 -	marjaisat
--	rapeat
 -	suklaiset
 -	viileat
 
