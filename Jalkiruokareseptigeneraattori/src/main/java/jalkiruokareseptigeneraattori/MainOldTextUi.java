@@ -17,10 +17,10 @@ public class MainOldTextUi {
      */
     public static void main(String[] args) {
 
-        Recipebook jalkkarit = new Recipebook();
+        Recipebook dessert = new Recipebook();
 
         Scanner ipReader = new Scanner(System.in);
-        TextUi uI = new TextUi(jalkkarit, ipReader);
+        TextUi uI = new TextUi(dessert, ipReader);
         uI.start();
     }
 

@@ -121,7 +121,6 @@ public class TextUi {
                 break;
             }
         }
-
     }
 
     /**

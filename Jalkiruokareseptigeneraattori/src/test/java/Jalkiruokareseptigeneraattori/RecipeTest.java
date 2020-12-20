@@ -25,12 +25,8 @@ public class RecipeTest {
         dessert = new Recipe("rahka", "marjaisat", "marja", 20, "https://u.jpg");
         toTest = new Recipe("pulla", "leivonnaiset");
         recipes.addRecipeToBook(dessert);
-
     }
 
-    //@Test
-    //public void hello() {
-    //}
     @Test
     public void ConstructorCreatesRecipe() {
         Recipe testiresepti = new Recipe("pulla", "leivonnaiset");

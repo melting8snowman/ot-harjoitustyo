@@ -115,8 +115,6 @@ public class Gui extends Application {
         comboBox.getSelectionModel().select(0);
         comboBox.setOnAction((event) -> {
             this.selectedIndex = comboBox.getSelectionModel().getSelectedIndex() + 1;
-            //String value = (String) comboBox.getValue();
-            //System.out.println(selectedIndex);
         });
         // random recipe of group button
         Button buttonRandOfGroup = new Button("Random from Preferred Group");
@@ -222,7 +220,6 @@ public class Gui extends Application {
     }
 
     //@Override
-
     /**
      *
      * @param window input value for Stage
@@ -234,8 +231,9 @@ public class Gui extends Application {
     }
 
     /**
-     * Update Image to correspond to new recipe or return initial image
-     * if new image not found
+     * Update Image to correspond to new recipe or return initial image if new
+     * image not found
+     *
      * @param initImage initial image input value
      * @param newImage new image input value
      * @param recipe input value for recipe
@@ -262,6 +260,7 @@ public class Gui extends Application {
 
     /**
      * Drop-down for group selection
+     *
      * @param combobox Group input value
      * @return prepared combobox
      */

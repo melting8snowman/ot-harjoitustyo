@@ -27,9 +27,6 @@ public class RecipebookTest {
         recipes.addRecipeToBook(dessert);
     }
 
-    //@Test
-    //public void hello() {
-    //}
     @Test
     public void constructorGeneratesRecipebook() {
         Recipebook testbook = new Recipebook();
