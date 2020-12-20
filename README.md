@@ -23,9 +23,11 @@ reseptien joukossa. Lisätoiminnallisuuksia voisivat olla myös uuden ryhmän li
 olevan reseptin muuttaminen toisene ryhmään.
 
 ## Dokumentaatio ##
-[Harjoitustyön määrittelydokumentti](https://www.github.com/melting8snowman/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
-
 [Arkkitehtuurikuvaus](https://github.com/melting8snowman/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuurikuvaus.md)
+
+[Käyttöohje](https://github.com/melting8snowman/ot-harjoitustyo/blob/master/dokumentaatio/kayttoohje.md)
+
+[Harjoitustyön määrittelydokumentti](https://www.github.com/melting8snowman/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
 
 [Työaikakirjanpito](https://github.com/melting8snowman/ot-harjoitustyo/blob/master/tyoaikakirjanpito.txt)
 
