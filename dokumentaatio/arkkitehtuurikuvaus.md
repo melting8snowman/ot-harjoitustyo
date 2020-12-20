@@ -28,10 +28,11 @@ Kuvataan seuraavaksi sekvenssikaaviona sovelluksen toimintalogiikka Recipe-luokk
 Sovellus hyödyntää yksinkertaista tekstitiedostoa josta luetaan alustuksessa sen perusluokkien objektien alustuksessa tarvittavat tiedot. Tekstikäyttöliittymällä lisättyjä reseptejä ei tallenneta alustustiedostolle vaan se sisältää ainoastaan ohjelmiston alkuperäiset reseptit. 
 [Alustustiedoston](https://github.com/melting8snowman/ot-harjoitustyo/blob/master/Jalkiruokareseptigeneraattori/recipes.txt) rakenne on seuraava
 
+<pre>
 name|group|ingredients|preparation|image
 Marjarahka|marjaisat|maitorahka, sokeri, marjat, kermavaahto|10|https:...ginal.jpg
 Suklaakeksi|rapeat|jauhot, sokeri, sulkaa, kananmuna, ruokasooda|45|https:..keksi.jpg
-
+</pre>
 Ensimmäinen rivi sisältää kenttänimet ja järjestyksen. Kentät on eroteltu | merkillä.
 
 # Ohjelmaan jääneet heikkoudet ja puutteet #
