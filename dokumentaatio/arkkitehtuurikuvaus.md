@@ -14,7 +14,9 @@ Ohjelmaa voidaan käyttää sekä vanhemmalla tekstikäyttöliittymällä että 
 Tekstikäyttöliittymä toimii tekstiperiaatteella Javan Scanner-luokkaa hyödyntäen kun taas graafinen käyttöliittymä on rakennettu JavaFX:n pohjalle. Graafisen luokan perusnäkymä on BorderPane, joka sisältää toimintaa ohjaavat napit Panen vasemmalla puoliskolla, tekstikentän Panen keskellä sekä kuvanäytön Panen alareunan tilassa. Käyttöliittymä on eristetty sovelluslogiikasta, se ainoastaan kutsuu sopivin parametrein sovelluslogiikan metodeja.
 
 # Sovelluslogiikka #
-Sovelluksen tiedon tallentamisesta ja -käsittelystä vastaavat luokat Recipe ja Recipebook. Näistä edellinen sisältää yksittäisen reseptin tiedot ja niiden luomiseen, muokkaamiseen ja hakemiseen tarvittavat metodit. Jokaiselle reseptille luodaan automaattisesti uniikki ID. Jälkimmäinen taas sisältää reseptikokoelman, niiden ryhmittelyn tallentamisen sekä logiikan satunnaisen reseptin arpomiseen sekä ryhmäkohtaisesti että kaikista kokoelman resepteistä.  
+ 
+
+Sovelluksen tiedon tallentamisesta ja -käsittelystä vastaavat luokat [Recipe](https://github.com/melting8snowman/ot-harjoitustyo/blob/master/Jalkiruokareseptigeneraattori/src/main/java/jalkiruokareseptigeneraattori/blogic/Recipe.java) ja [Recipebook](https://github.com/melting8snowman/ot-harjoitustyo/blob/master/Jalkiruokareseptigeneraattori/src/main/java/jalkiruokareseptigeneraattori/blogic/Recipebook.java). Näistä edellinen sisältää yksittäisen reseptin tiedot ja niiden luomiseen, muokkaamiseen ja hakemiseen tarvittavat metodit. Jokaiselle reseptille luodaan automaattisesti uniikki ID. Jälkimmäinen taas sisältää reseptikokoelman, niiden ryhmittelyn tallentamisen sekä logiikan satunnaisen reseptin arpomiseen sekä ryhmäkohtaisesti että kaikista kokoelman resepteistä.  
 
 <img src="https://github.com/melting8snowman/ot-harjoitustyo/blob/master/dokumentaatio/storing_classes.png" width="560">
 
