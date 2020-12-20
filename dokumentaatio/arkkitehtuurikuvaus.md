@@ -35,7 +35,7 @@ Suklaakeksi|rapeat|jauhot, sokeri, sulkaa, kananmuna, ruokasooda|45|https:..keks
 Ensimmäinen rivi sisältää kenttänimet ja järjestyksen. Kentät on eroteltu | merkillä.
 
 # Ohjelmaan jääneet heikkoudet ja puutteet #
-[uis](https://github.com/melting8snowman/ot-harjoitustyo/tree/master/Jalkiruokareseptigeneraattori/src/main/java/jalkiruokareseptigeneraattori/uis) -pakkauksessa
+[uis](https://github.com/melting8snowman/ot-harjoitustyo/tree/master/Jalkiruokareseptigeneraattori/src/main/java/jalkiruokareseptigeneraattori/uis)-pakkauksessa
  sijaitsevat käyttöliittymämetodit ylittävät checkstylessa määritetyn 20-rivin maksimipituuden. Koodien muokkaaminen tältä osin erillisiin metodeihin ei ollut kuitenkaan nykyisellään järkevää, tulevissa versioissa tätä voitaisiin kehittää. Nykyisellään tekstikäyttöliittymä mahdollistaa uusien reseptien luomisen käyttöliittymän kautta, mutta tätä toiminnallisuutta ei rakennettu graafiseen käyttöliittymään. Käyttöliittymän kautta luotuja reseptejä ei tietoturvan takia haluttu tallentaa ohjelman alustustiedostoon, mutta tulevaisuudessa tämä voitaisiin halutessa varsin helposti toteuttaa.
 
 
