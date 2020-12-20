@@ -8,6 +8,15 @@ Reseptit jaetaan muutamaan luokkaan ja ohjelman tulee kysyä käyttäjältä pä
 jälkiruokaryhmää. Tämän jälkeen ohjelma generoi/arpoo käyttäjälle oikeaan ryhmään kuuluvan 
 jälkiruoan tehtäväksi ja nautittavaksi.
 
+## Dokumentaatio ##
+[Arkkitehtuurikuvaus](https://github.com/melting8snowman/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuurikuvaus.md)
+
+[Käyttöohje](https://github.com/melting8snowman/ot-harjoitustyo/blob/master/dokumentaatio/kayttoohje.md)
+
+[Harjoitustyön määrittelydokumentti](https://www.github.com/melting8snowman/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
+
+[Työaikakirjanpito](https://github.com/melting8snowman/ot-harjoitustyo/blob/master/tyoaikakirjanpito.txt)
+
 ## Reseptiryhmät ##
 Jälkiruokaryhmiin kuuluvat ainakin seuraavat: 
 -	marjaisat
@@ -22,17 +31,12 @@ ohjelman tietokantaan ryhmittelyineen, minkä jälkeen lisätyn jälkiruoka vois
 reseptien joukossa. Lisätoiminnallisuuksia voisivat olla myös uuden ryhmän lisääminen sekä olemassa 
 olevan reseptin muuttaminen toisene ryhmään.
 
-## Dokumentaatio ##
-[Arkkitehtuurikuvaus](https://github.com/melting8snowman/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuurikuvaus.md)
-
-[Käyttöohje](https://github.com/melting8snowman/ot-harjoitustyo/blob/master/dokumentaatio/kayttoohje.md)
-
-[Harjoitustyön määrittelydokumentti](https://www.github.com/melting8snowman/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
-
-[Työaikakirjanpito](https://github.com/melting8snowman/ot-harjoitustyo/blob/master/tyoaikakirjanpito.txt)
-
 ## Releases ##
-[Week5](https://github.com/melting8snowman/ot-harjoitustyo/releases/tag/Week5)
+[Final](https://github.com/melting8snowman/ot-harjoitustyo/releases/tag/final)
 
 [Week6](https://github.com/melting8snowman/ot-harjoitustyo/releases/tag/week6)
+
+[Week5](https://github.com/melting8snowman/ot-harjoitustyo/releases/tag/Week5)
+
+
 
