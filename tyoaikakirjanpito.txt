@@ -1,14 +1,19 @@
 Pvm	tunnit	aihe/työ
-9.11.	2	Aiheen suunnittelua, vertailua ja ohjeisiin & Github-tutustumista yms
-9.11	2	SSH:n, SSH-agentin yms kanssa tappelua, uudelleenasennusta yms
-10.11	1	Javan testaamiseen tutustumista ja kokeilua. 
-10.11	2	Aiheen valinta, määrittelydokumentin luominen sekä github-päivitys
-16.11 	2 	Projektin ja luokkien luominen ym (ja Javan muistelua)
-17.11 	3 	Testauksen kanssa tappelua
-23.11	3	Harjoitustyön koodien rakentelua ja englanninnosta	
-24.11	6	Javan tiedostonkäsittelyn rakentamista, testaamisen kehittämistä, Checkstyle yms
-1.12	7	Ohjelman kehittämistä, githubin asetuksia, testaamista yms
-7.12	4	Graphical UI harjottelua
+9.11.	2	  Aiheen suunnittelua, vertailua ja ohjeisiin & Github-tutustumista yms
+9.11	2	  SSH:n, SSH-agentin yms kanssa tappelua, uudelleenasennusta yms
+10.11	1	  Javan testaamiseen tutustumista ja kokeilua. 
+10.11	2	  Aiheen valinta, määrittelydokumentin luominen sekä github-päivitys
+16.11 2 	Projektin ja luokkien luominen ym (ja Javan muistelua)
+17.11 3 	Testauksen kanssa tappelua
+23.11	3	  Harjoitustyön koodien rakentelua ja englanninnosta	
+24.11	6	  Javan tiedostonkäsittelyn rakentamista, testaamisen kehittämistä, Checkstyle yms
+1.12	7	  Ohjelman kehittämistä, githubin asetuksia, testaamista yms
+7.12	4	  Graphical UI harjottelua
 8.12	14	Javaongelmien kanssa painimista, uudelleen asennusta, Javadoc virheiden, JAVA_HOME -asetusongelmia sekä JDK/JRE - en tiedä mitä tapahtui, mikään ei toiminut enää
+14.12 8   Koodin parantamista, toiminnallisuuksien lisäämistä ja dokumenttien päivittämistä
+18.12 8  Graafisen UIn tekeminen ja dokumenttien päivittäminen
+19.12 3  Testauskattavuuden kohotus
+20.12 12  Graafisen UIn viimeistely ja käyttöönotto, sekä dokumentoinnin päivittäminen
 
-== Yht 46 tuntia
+
+== Yht 75 tuntia
