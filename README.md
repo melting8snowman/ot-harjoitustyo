@@ -54,8 +54,9 @@ Kattavuusraporttia voi tarkastella avaamalla selaimella tiedosto target/site/jac
 
 # Suoritettavan jarin generointi
 Komento
-
+<pre>
 mvn package
+</pre>
 generoi hakemistoon target suoritettavan jar-tiedoston OtmTodoApp-1.0-SNAPSHOT.jar
 
 # JavaDoc
