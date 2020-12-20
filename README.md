@@ -60,14 +60,16 @@ generoi hakemistoon target suoritettavan jar-tiedoston OtmTodoApp-1.0-SNAPSHOT.j
 
 # JavaDoc
 JavaDoc generoidaan komennolla
-
+<pre>
 mvn javadoc:javadoc
+</pre>
 JavaDocia voi tarkastella avaamalla selaimella tiedosto target/site/apidocs/index.html
 
 # Checkstyle
 Tiedostoon checkstyle.xml määrittelemät tarkistukset suoritetaan komennolla
-
- mvn jxr:jxr checkstyle:checkstyle
+<pre>
+mvn jxr:jxr checkstyle:checkstyle
+ </pre>
 Mahdolliset virheilmoitukset selviävät avaamalla selaimella tiedosto target/site/checkstyle.html
 
 
