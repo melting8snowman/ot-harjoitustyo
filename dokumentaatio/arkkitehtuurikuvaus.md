@@ -20,7 +20,7 @@ Sovelluksen tiedon tallentamisesta ja -käsittelystä vastaavat luokat Recipe ja
 
 Kuvataan seuraavaksi sekvenssikaaviona sovelluksen toimintalogiikka Recipe-luokkaan liittyvän GroupID:n päätoiminnallisuuden osalta. Luotaessa Recipe-olio tallennetaan kyseiseen reseptiin liittyvä GroupName tekstimuodossa. Kun tämä Recipe lisätään Recipebookiin, tarkastetaan kyseiseen GroupNamen olemassa olo ja tarvittaessa luodaan sille uusi ryhmä. Tämän jälkeen Recipelle palautetaan sen GroupID. Käyttöliittymän kysyessä tiettyyn ryhmään liittyviä reseptejä, tiedustelun avain on GroupID jonka avulla RecipeBook tietää mitkä Recipe ID:t kuuluvat kyseiseen ryhmään ja pystyy palauttamaan oikean Recipen tiedot käyttäliittymälle.
 
-<img src="https://github.com/melting8snowman/ot-harjoitustyo/blob/master/dokumentaatio/recipeID_groupID_handling.png" width="560">
+<img src="https://github.com/melting8snowman/ot-harjoitustyo/blob/master/dokumentaatio/recipeID_groupID_handling.png" width="760">
 
 # Pysyväistallennus/Ohjelman alustus #
 Sovellus hyödyntää yksinkertaista tekstitiedostoa josta luetaan alustuksessa sen perusluokkien objektien alustuksessa tarvittavat tiedot. Tekstikäyttöliittymällä lisättyjä reseptejä ei tallenneta alustustiedostolle vaan se sisältää ainoastaan ohjelmiston alkuperäiset reseptit. Alustustiedoston rakenne on seuraava
