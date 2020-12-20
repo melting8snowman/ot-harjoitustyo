@@ -12,10 +12,9 @@ kuuluvan jälkiruoan tehtäväksi ja nautittavaksi.
 
 ## Reseptiryhmät ##
 Jälkiruokaryhmiin kuuluvat ainakin seuraavat: 
--	Marjaisa
--	Raikas
--	Suklainen
-- Rapea
+-	marjaisat
+-	suklaiset
+- viileat
 
 ## Lisätoiminnot ##
 Yllämainitun lisäksi käyttäjän tulee voida lisätä hyväksi havaitsemansa jälkiruoka 
