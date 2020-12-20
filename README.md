@@ -11,6 +11,8 @@ jälkiruoan tehtäväksi ja nautittavaksi.
 ## Dokumentaatio ##
 [Arkkitehtuurikuvaus](https://github.com/melting8snowman/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuurikuvaus.md)
 
+[Testausdokumentti](https://github.com/melting8snowman/ot-harjoitustyo/blob/master/dokumentaatio/testaus.md)
+
 [Käyttöohje](https://github.com/melting8snowman/ot-harjoitustyo/blob/master/dokumentaatio/kayttoohje.md)
 
 [Harjoitustyön määrittelydokumentti](https://www.github.com/melting8snowman/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
