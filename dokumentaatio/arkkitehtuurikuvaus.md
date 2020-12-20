@@ -24,8 +24,7 @@ Kuvataan seuraavaksi sekvenssikaaviona sovelluksen toimintalogiikka Recipe-luokk
 
 # Pysyväistallennus/Ohjelman alustus #
 Sovellus hyödyntää yksinkertaista tekstitiedostoa josta luetaan alustuksessa sen perusluokkien objektien alustuksessa tarvittavat tiedot. Tekstikäyttöliittymällä lisättyjä reseptejä ei tallenneta alustustiedostolle vaan se sisältää ainoastaan ohjelmiston alkuperäiset reseptit. 
-Alustustiedoston rakenne on seuraava
-https://github.com/melting8snowman/ot-harjoitustyo/blob/master/Jalkiruokareseptigeneraattori/recipes.txt
+[Alustustiedoston](https://github.com/melting8snowman/ot-harjoitustyo/blob/master/Jalkiruokareseptigeneraattori/recipes.txt) rakenne on seuraava
 
 name|group|ingredients|preparation|image
 Marjarahka|marjaisat|maitorahka, sokeri, marjat, kermavaahto|10|https:...ginal.jpg
