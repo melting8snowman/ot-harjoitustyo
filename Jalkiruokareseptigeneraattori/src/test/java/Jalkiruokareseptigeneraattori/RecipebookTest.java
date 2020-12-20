@@ -9,19 +9,22 @@ import static org.junit.Assert.assertThat;
 import static org.junit.Assert.*;
 import jalkiruokareseptigeneraattori.blogic.Recipe;
 import jalkiruokareseptigeneraattori.blogic.Recipebook;
- 
+
 public class RecipebookTest {
 
-    Recipe jalkkari;
-    Recipebook reseptit;
+    Recipe dessert;
+    Recipe toTest;
+    Recipebook recipes;
 
     public void jalkiruokareseptigeneraattoriTest() {
     }
 
     @Before
     public void setUp() {
-        reseptit = new Recipebook();
-        jalkkari = new Recipe("rahka", "marjaisat");
+        recipes = new Recipebook();
+        dessert = new Recipe("rahka", "marjaisat", "marja", 20, "https://u.jpg");
+        toTest = new Recipe("pulla", "leivonnaiset");
+        recipes.addRecipeToBook(dessert);
     }
 
     //@Test
@@ -32,12 +35,12 @@ public class RecipebookTest {
         Recipebook testbook = new Recipebook();
         assertTrue(testbook.doesGroupExist(2));
     }
-    
+
     @Test
     public void constructorGeneratesRecipebook2() {
         Recipebook testbook = new Recipebook();
         String answer = String.valueOf(testbook.getNumberOfRecipes());
-        assertEquals("6", answer);
+        assertEquals("9", answer);
     }
 
     @Test
@@ -57,9 +60,9 @@ public class RecipebookTest {
 
     @Test
     public void addRecipetoBook() {
-        //Reseptikirja reseptit = new Reseptikirja();
-        Recipe res = new Recipe("menujää", "viilea");
-        reseptit.addRecipeToBook(res);
+        //Reseptikirja recipes = new Reseptikirja();
+        Recipe res = new Recipe("menujää", "viileat");
+        recipes.addRecipeToBook(res);
         Integer aika = res.getPreparation();
         assertEquals(new Integer(0), aika);
         //assertEquals("-1", String.valueOf(ressi.getValmistusaika()));
@@ -68,34 +71,97 @@ public class RecipebookTest {
 
     @Test
     public void addRecipetoBook2() {
-        //Reseptikirja reseptit = new Reseptikirja();
-        Recipe res = new Recipe("menujää2", "viilea");
+        //Reseptikirja recipes = new Reseptikirja();
+        Recipe res = new Recipe("menujää2", "viileat");
         res.setPreparation(200);
-        reseptit.addRecipeToBook(res);
+        recipes.addRecipeToBook(res);
         Integer aika = res.getPreparation();
         assertEquals(new Integer(200), aika);
     }
 
     @Test
+    public void getRecipeFromBook1() {
+        String answer = String.valueOf(recipes.getRecipeFromBook(1).name);
+        assertEquals("Suklaakeksi", answer);
+    }
+
+    @Test
+    public void getRecipeFromBook2() {
+        String answer = String.valueOf(recipes.getRecipeFromBook(100000));
+        assertEquals("null", answer);
+    }
+
+    @Test
+    public void getGroupId() {
+        String answer = String.valueOf(recipes.getGroupId("doesnotexist"));
+        assertEquals("-1", answer);
+    }
+
+    @Test
     public void changeGroup() {
-        String answer = String.valueOf(jalkkari.changeGroup("uusi"));
+        String answer = String.valueOf(dessert.changeGroup("uusi"));
         assertEquals("Group of recipe changed to uusi", answer);
     }
 
     @Test
     public void GroupExists() {
-        assertTrue(reseptit.doesGroupExist(1));
+        assertTrue(recipes.doesGroupExist(1));
     }
 
     @Test
     public void GroupExists2() {
-        assertFalse(reseptit.doesGroupExist(100));
+        assertFalse(recipes.doesGroupExist(100));
+    }
+
+    @Test
+    public void getRandomRecipe() {
+        assertFalse(recipes.getRandomRecipe().name.contains("@"));
+    }
+
+    @Test
+    public void printGroups() {
+        assertTrue(recipes.printGroups().contains("1 - marjaisat"));
+    }
+    
+        @Test
+    public void printRecipes() {
+        String answer = String.valueOf(recipes.printRecipes(4));
+        assertTrue(answer.contains("mehu"));
+    }
+    
+            @Test
+    public void listRecipes() {
+        String answer = String.valueOf(recipes.listRecipesOfGroup(4));
+        assertTrue(answer.contains("Mehu"));
+    }
+    
+                @Test
+    public void recipebookDetails() {
+        String answer = String.valueOf(recipes.recipebookDetails());
+        assertTrue(answer.contains("This recipebook contains"));
+    }
+
+    @Test
+    public void getRandomRecipeFromGroup() {
+        assertFalse(recipes.getRandomRecipeFromGroup(1).name.contains("@"));
+    }
+
+    @Test
+    public void getRandomRecipeFromGroup2() {
+        String answer = String.valueOf(recipes.getRandomRecipeFromGroup(100000));
+        assertEquals("null", answer);
     }
 
     @Test
     public void RecipeCounts() {
-        String answer = String.valueOf(reseptit.getNumberOfRecipes());
-        assertEquals("6", answer);
+        String answer = String.valueOf(recipes.getNumberOfRecipes());
+        assertEquals("10", answer);
+    }
+    
+        @Test
+    public void RecipeCountsPerGroup() {
+        String answer = String.valueOf(recipes.coutsOfRecipesPerGroup());
+        assertTrue(answer.contains("marjaisat - 4"));
     }
 
     // @Test

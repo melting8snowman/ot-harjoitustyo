@@ -3,13 +3,14 @@
  */
 package jalkiruokareseptigeneraattori.blogic;
 
-
 import java.util.concurrent.atomic.AtomicInteger;
-    /**
-     * This class depicts a singular recipe,
-     * preparation time is stored in full minutes
-     */
+
+/**
+ * This class depicts a singular recipe, preparation time is stored in full
+ * minutes
+ */
 public class Recipe {
+
     /**
      * Name
      */
@@ -26,8 +27,7 @@ public class Recipe {
     public String groupName;
 
     /**
-     * GroupId that will be generated when recipe is added
-     * to Recipebook
+     * GroupId that will be generated when recipe is added to Recipebook
      */
     public Integer groupId;
 
@@ -52,15 +52,16 @@ public class Recipe {
 
     /**
      * Main generator
-     * @param nimi input value
+     *
+     * @param name input value
      * @param groupName input value
      * @param ingredients input value
      * @param preparation input value
      * @param imageUrl input value
      */
-    public Recipe(String nimi, String groupName, String ingredients,
+    public Recipe(String name, String groupName, String ingredients,
             Integer preparation, String imageUrl) {
-        this.name = nimi;
+        this.name = name;
         this.groupName = groupName;
         this.ingredients = ingredients;
         this.preparation = preparation;
@@ -70,6 +71,7 @@ public class Recipe {
 
     /**
      * Generator without URL
+     *
      * @param name input value
      * @param groupName input value
      * @param ingredients input value
@@ -86,6 +88,7 @@ public class Recipe {
 
     /**
      * Minimum generator
+     *
      * @param name input value
      * @param groupName input value
      */
@@ -97,6 +100,7 @@ public class Recipe {
     }
 
     /**
+     * Getter for Group ID
      *
      * @return group integer input value
      */
@@ -105,6 +109,7 @@ public class Recipe {
     }
 
     /**
+     * Setter for Group ID
      *
      * @param groupId input value
      */
@@ -113,6 +118,20 @@ public class Recipe {
     }
 
     /**
+     * Getter for Url
+     *
+     * @return URL of image
+     */
+    public String getImageUrl() {
+        if (this.imageUrl == null) {
+            return null;
+        } else {
+            return imageUrl;
+        }
+    }
+
+    /**
+     * Setter for ingredients
      *
      * @param ing input value
      */
@@ -121,6 +140,7 @@ public class Recipe {
     }
 
     /**
+     * getter for ingredients
      *
      * @return String ingredients input value
      */
@@ -129,6 +149,7 @@ public class Recipe {
     }
 
     /**
+     * getter gor group name
      *
      * @return String name of group input value
      */
@@ -137,6 +158,7 @@ public class Recipe {
     }
 
     /**
+     * setter for groupname
      *
      * @param groupName input value
      * @return String of return
@@ -147,18 +169,17 @@ public class Recipe {
     }
 
     /**
+     * getter for preparation
      *
-     * @return Preparation time or -1 
+     * @return Preparation time or -1
      */
     public Integer getPreparation() {
-        if (this.preparation == null) {
-            return -1;
-        } else {
-            return preparation;
-        }
+        return preparation;
+
     }
 
     /**
+     * setter for preparation
      *
      * @param preptime preparation time input value
      */
@@ -168,14 +189,14 @@ public class Recipe {
 
     @Override
     public String toString() {
-        String returnMsg = System.lineSeparator()
-                + "Recipe: " + this.name + System.lineSeparator()
-                + "Group: " + this.groupName + System.lineSeparator();
+        String returnMsg
+                = "Recipe: " + this.name + "\n" + System.lineSeparator()
+                + "Group: " + this.groupName + "\n" + System.lineSeparator();
 
         if (this.preparation > 0) {
             returnMsg = returnMsg
                     + "Time required for preparation: " + this.preparation
-                    + System.lineSeparator();
+                    + "\n" + System.lineSeparator();
 
         }
         if (!this.ingredients.isEmpty()) {

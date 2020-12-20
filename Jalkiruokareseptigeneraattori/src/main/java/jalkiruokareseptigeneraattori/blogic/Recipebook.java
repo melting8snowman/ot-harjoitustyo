@@ -13,6 +13,7 @@ import jalkiruokareseptigeneraattori.uis.RpInt;
 
 /**
  * Recipebook class that stores recipes and provides methods
+ *
  * @author niemi
  */
 public class Recipebook implements RpInt {
@@ -31,9 +32,10 @@ public class Recipebook implements RpInt {
     }
 
     /**
-     * Get ID of group based on name 
+     * Get ID of group based on name
+     *
      * @param igroup input value
-     * @return Integer group id 
+     * @return Integer group id
      */
     public Integer addGroup(String igroup) {
         //check if group value exists
@@ -49,6 +51,7 @@ public class Recipebook implements RpInt {
 
     /**
      * Check if group exists
+     *
      * @param searched input value
      * @return Boolean
      */
@@ -58,6 +61,7 @@ public class Recipebook implements RpInt {
 
     /**
      * Get group ID of Name
+     *
      * @param igroup input value
      * @return ID or -1
      */
@@ -77,6 +81,7 @@ public class Recipebook implements RpInt {
 
     /**
      * Add Recipe to Recipebook and check group exists, if not add
+     *
      * @param res Recipe input value
      */
     public void addRecipeToBook(Recipe res) {
@@ -87,7 +92,8 @@ public class Recipebook implements RpInt {
 
     /**
      * Get a single recipe based on ID
-     * @param idx ID of recipe input value
+     *
+     * @param idx number of recipe input value
      * @return Recipe or null
      */
     public Recipe getRecipeFromBook(Integer idx) {
@@ -99,17 +105,27 @@ public class Recipebook implements RpInt {
     }
 
     /**
+     * Getter for groups
+     * @return HashMap
+     */
+    public HashMap<Integer, String> getGroups() {
+        return groups;
+    }
+
+    /**
      * Calculate total number of recipes in book
+     *
      * @return size
      */
     public int getNumberOfRecipes() {
-        System.out.println("Recipebook contains " + recipes.size() + " recipes");
+        //System.out.println("Recipebook contains " + recipes.size() + " recipes");
         return recipes.size();
     }
 
     /**
      * Random pick a recipe of a group from book
-     * @param igroupId input value
+     *
+     * @param igroupId ID number of group ID input value
      * @return Recipe or null
      */
     public Recipe getRandomRecipeFromGroup(Integer igroupId) {
@@ -130,9 +146,10 @@ public class Recipebook implements RpInt {
             return shortList.get(randomRecipe);
         }
     }
-    
+
     /**
      * Random pick any recipe in book
+     *
      * @return Recipe or null
      */
     @Override
@@ -146,24 +163,29 @@ public class Recipebook implements RpInt {
             return this.recipes.get(randomRecipe);
         }
     }
-    
+
     /**
      * Print existing groups
+     *
      * @return String or groups
      */
     @Override
     public String printGroups() {
         String res = "";
         for (Integer key : groups.keySet()) {
-            res = res.concat(key + " - " + groups.get(key));
-            System.out.println(key + " - " + groups.get(key));
+            res = res.concat(key + " - " + groups.get(key)
+                    + "\n" + System.lineSeparator());
+            //System.out.println(key + " - " + groups.get(key)
+            //        + "\n" + System.lineSeparator());
+
         }
-        System.out.println("");
+        //System.out.println("");
         return res;
     }
 
     /**
      * Print recipes
+     *
      * @param igroup input value
      * @return String of recipes
      */
@@ -171,31 +193,68 @@ public class Recipebook implements RpInt {
         String result = "";
         for (Recipe res : this.recipes) {
             if (res.groupId == igroup) {
-                result = result.concat(res+ System.lineSeparator());
-                System.out.printf("%s ", res);
+                result = result.concat(res + System.lineSeparator());
+                //System.out.printf("%s ", res);
             }
-        } return result;
+        }
+        return result;
+    }
+
+    /**
+     * List recipes of group
+     * @param igroup input value
+     * @return string list
+     */
+    public String listRecipesOfGroup(Integer igroup) {
+        String result = "";
+        for (Recipe res : this.recipes) {
+            if (res.groupId == igroup) {
+                result = result.concat(res.name + "\n" + System.lineSeparator());
+                //System.out.printf("%s ", res);
+            }
+        }
+        return result;
+    }
+
+    /**
+     * Get details of recipebook
+     * @return string of details
+     */
+    public String recipebookDetails() {
+        String details = "This recipebook contains a total of "
+                + getNumberOfRecipes() + " recipes."
+                + "\n" + System.lineSeparator()
+                + "Each recipe group contais as follows:"
+                + "\n" + System.lineSeparator()
+                + coutsOfRecipesPerGroup();
+
+        return details;
     }
 
     /**
      * Calculate recipe group counts
+     * @return string of counts
      */
-    public void coutsOfRecipesPerGroup() {
+    public String coutsOfRecipesPerGroup() {
         Integer ctn = 0;
+        String ret = "";
         for (Integer key : groups.keySet()) {
             for (Recipe res : this.recipes) {
                 if (key == res.groupId) {
                     ctn += 1;
                 }
             }
-            System.out.println(key + " - " + groups.get(key) + " - " + ctn);
+            ret = ret + (key + " - " + groups.get(key) + " - " + ctn
+                    + "\n" + System.lineSeparator());
             ctn = 0;
         }
+        return ret;
     }
 
     /**
      * initialize recipes from file recipes.txt
-     * @param resbook input value
+     *
+     * @param resbook Recipebook input value
      */
     public void initializeRecipes(Recipebook resbook) {
         boolean firstLine = true;
@@ -203,7 +262,7 @@ public class Recipebook implements RpInt {
             while (reader.hasNextLine()) {
                 String row = reader.nextLine(); // skip first or empty line
                 if ((firstLine) || (row.isEmpty())) {
-                    firstLine = false; 
+                    firstLine = false;
                     continue;
                 }
                 String[] col = row.split(Pattern.quote("|"));
@@ -218,7 +277,4 @@ public class Recipebook implements RpInt {
             //System.out.println("Virhe: " + e.getMessage());
         }
     }
-
-   
-
 }

@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
- *
+ * This class is used for the older Text-based User interface
  * @author niemi
  */
 public class TextUi {
@@ -18,8 +18,8 @@ public class TextUi {
     private List<Integer> commands;
 
     /**
-     *
-     * @param recipes input value
+     * TextUi constructor
+     * @param recipes input value for Recipebook
      * @param ipReader scanner input value
      */
     public TextUi(Recipebook recipes, Scanner ipReader) {
@@ -29,7 +29,7 @@ public class TextUi {
     }
 
     /**
-     *
+     * Commence text-UI
      */
     public void start() {
         // UI options
@@ -66,18 +66,21 @@ public class TextUi {
             }
             if (option == 3) {  // print recipe groups
                 System.out.println("Printing recipe groups...");
-                recipes.printGroups();
+                System.out.println(recipes.printGroups());
+                System.out.println("");
                 continue;
             }
             if (option == 4) {  //list group recipes
                 chosenGrp = this.enterValidGroup(ipReader);
-                //System.out.println(chosenGrp);
-                recipes.printRecipes(chosenGrp);
+                System.out.println(recipes.printRecipes(chosenGrp));
                 continue;
             }
             if (option == 5) {  //list recipebooks details
                 recipes.getNumberOfRecipes();
-                recipes.coutsOfRecipesPerGroup();
+                System.out.println("Recipebook contains " 
+                        + recipes.getNumberOfRecipes() + " recipes");
+                System.out.println(recipes.coutsOfRecipesPerGroup());
+                
             }
             if (option == 6) {  //add recipe
                 System.out.println("Creating a new recipe, please add the following details");
@@ -122,13 +125,13 @@ public class TextUi {
     }
 
     /**
-     *
+     * Check for group input validity
      * @param ipReader scanner input value
      * @return valid group chosen
      */
     public Integer enterValidGroup(Scanner ipReader) {
         System.out.println("You have the following groups available:");
-        this.recipes.printGroups();
+        System.out.println(this.recipes.printGroups());
         while (true) {
             Integer chosen;
             do {
@@ -149,7 +152,7 @@ public class TextUi {
     }
 
     /**
-     *
+     * Initialize options 
      */
     public void initOptions() {
         // init text options

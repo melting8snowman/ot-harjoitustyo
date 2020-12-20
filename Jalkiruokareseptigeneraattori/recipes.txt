@@ -1,8 +1,12 @@
 name|group|ingredients|preparation|image
-marjarahka|marjaisat|maitorahka, sokeri, marjat, kermavaahto|10|https://www.kotikokki.net/media/cache/large_1024/recipeimage/large_1024/52d6e215d074a9ec0e0cbbc0/original.jpg?1298129257
-suklaakeksi|rapeat|jauhot, sokeri, sulkaa, kananmuna, ruokasooda|45|https://www.kotikokki.net/media/cache/large_1024/recipeimage/large_1024/52d6e16bd074a9ec0e0c1a38/original.jpg?1298071961
-marjahyydyke|marjaisat|marjat, mehu, vesi|200|https://images.cdn.soppa365.fi/rA77SJUig0pDbMKGzRiyqXtjk0Q=/1230x0/smart/soppa365.fi/s3fs-public/recipe_main_media/534d26f7075500.64233985.jpg?itok=JiU_FE_e&timestamp=1488395047
-marjakiisseli|marjaisat|marjat, mehu, vesi, hyydyte, sokeri|40|https://anna.fi/awpo/img/s/f/ruokaohje/947783-marjakiisseli.jpg?w=1000
-suklaamousse|suklaiset|kerma, suklaa|20|https://cdn.valio.fi/mediafiles/09a5453a-3e15-4050-adf7-c636ad70cc51/1000x752-recipe-hero/4x3/suklaamousse.jpg
-mehu|viilea|tiiviste, vesi|5|https://canningwithmehuliisa.files.wordpress.com/2018/07/juice-and-luxardo.jpg
+Marjarahka|marjaisat|maitorahka, sokeri, marjat, kermavaahto|10|https://www.kotikokki.net/media/cache/large_1024/recipeimage/large_1024/52d6e215d074a9ec0e0cbbc0/original.jpg?1298129257
+Suklaakeksi|rapeat|jauhot, sokeri, sulkaa, kananmuna, ruokasooda|45|https://www.kotikokki.net/media/cache/large_1024/recipeimage/large_1024/52d6e16bd074a9ec0e0c1a38/original.jpg?1298071961
+Marjahyydyke|marjaisat|marjat, mehu, vesi|200|https://images.cdn.soppa365.fi/rA77SJUig0pDbMKGzRiyqXtjk0Q=/1230x0/smart/soppa365.fi/s3fs-public/recipe_main_media/534d26f7075500.64233985.jpg?itok=JiU_FE_e&timestamp=1488395047
+Marjakiisseli|marjaisat|marjat, mehu, vesi, hyydyte, sokeri|40|https://anna.fi/awpo/img/s/f/ruokaohje/947783-marjakiisseli.jpg?w=1000
+Suklaamousse|suklaiset|kerma, suklaa|20|https://cdn.valio.fi/mediafiles/09a5453a-3e15-4050-adf7-c636ad70cc51/1000x752-recipe-hero/4x3/suklaamousse.jpg
+Mehu|viileat|tiiviste, vesi|5|https://canningwithmehuliisa.files.wordpress.com/2018/07/juice-and-luxardo.jpg
+Keksi|rapeat|voita,sokeria,kananmuna,vehnajauho|45|https://www.handletheheat.com/wp-content/uploads/2013/10/Soft-Chocolate-Chip-Cookies-SQUARE.jpg
+Brownie|suklaiset|voita,sokeria,suklaata,kananmuna,vehnajauho|30|https://bromabakery.com/wp-content/uploads/2019/05/Best-Brownies-2.jpg
+Mehujaa|viileat|mehu,jaa,sokeri,marjat|400|https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Vannis.jpg/375px-Vannis.jpg
+
 
