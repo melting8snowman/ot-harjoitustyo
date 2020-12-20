@@ -5,7 +5,7 @@
 # Rakenne #
 Ohjelman rakenne on seuraava:
 
-<img src="https://github.com/melting8snowman/ot-harjoitustyo/blob/master/dokumentaatio/rakenne.png" width="160">
+<img src="https://github.com/melting8snowman/ot-harjoitustyo/blob/master/dokumentaatio/rakenne.png" width="560">
 
 Sovelluksen käynnistyessä luodaan tarvittavat luokat Recipe ja RecipeBook sekä alustetaan niiden alkutiedot erillisestä alustustiedostosta recipes.txt. Ensisijainen Main käynnistää graafisen käyttöliittymän, vanhempi tekstipohjainen käyttöliittymä voidaan halutessa käynnistää erillistä MainOldTextUi:tä käyttämällä.
 
