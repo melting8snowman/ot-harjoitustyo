@@ -1,7 +1,5 @@
 **Harjoitustyön vaatimusmäärittely - Ohjelmistotekniikka**
 
-Harri Nieminen
-
 # Jälkiruokareseptigeneraattori
 
 ## Päätoiminnallisuus ##
@@ -14,16 +12,14 @@ kuuluvan jälkiruoan tehtäväksi ja nautittavaksi.
 
 ## Reseptiryhmät ##
 Jälkiruokaryhmiin kuuluvat ainakin seuraavat: 
--	Kirpeä
--	Raikas
--	Viileä
--	Suklainen
+-	marjaisat
+-	rapeat
+-	suklaiset
+-	viileat
 
 ## Lisätoiminnot ##
-Yllämainitun lisäksi käyttäjän tulee voida lisätä hyväksi havaitsemansa jälkiruoka 
-ohjelman tietokantaan ryhmittelyineen, minkä jälkeen lisätyn jälkiruoan tulee 
-olla jatkossa arvottavien reseptien joukossa.
-Lisätoiminnallisuuksia voisivat olla myös ryhmien listaus sekä uuden ryhmän lisääminen.
+Yllämainitun lisäksi käyttäjän tulee saada lisätietoa tallennetuista resepteistä, luoduista ryhmistä sekä reseptien lukumäärästä ryhmissä. Käyttäjän pitäisi saada kuva generaattorin arpomasta reseptistä. Olisi hyvä voida lisätä hyväksi havaitsemansa jälkiruoka ohjelman tietokantaan ryhmittelyineen, minkä jälkeen lisätyn jälkiruoka voisi olla jatkossa arvottavien reseptien joukossa.
+Lisätoiminnallisuuksia voisivat olla myös uuden ryhmän lisääminen sekä olemassa olevan reseptin muuttaminen toisene ryhmään.
 
 
 
