@@ -43,11 +43,13 @@ olevan reseptin muuttaminen toisene ryhmään.
 ## Komentorivitoiminnot ##
 # Testaus
 Testit suoritetaan komennolla
-
+<pre>
 mvn test
+</pre>
 Testikattavuusraportti luodaan komennolla
-
+<pre>
 mvn jacoco:report
+</pre>
 Kattavuusraporttia voi tarkastella avaamalla selaimella tiedosto target/site/jacoco/index.html
 
 # Suoritettavan jarin generointi
