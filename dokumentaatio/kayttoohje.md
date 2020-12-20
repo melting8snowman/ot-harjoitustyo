@@ -5,9 +5,9 @@ Lataa tiedosto [Jalkiruokareseptigeneraattori.jar](https://github.com/melting8sn
 ## Konfigurointi
 Sovellus on rakennettu ja todettu toimivaksi Javan versiolla 11.
 Sovellus odottaa että suoritushakemistossa on alustustiedosto recipes.txt, joka siis sisältyy ladattavaan jar-tiedostoon. Kyseinen tiedosto määrittelee alustettavat reseptit. Tiedoston rakenne on seuraava
-
+<pre>
 name|group|ingredients|preparation|image Marjarahka|marjaisat|maitorahka, sokeri, marjat, kermavaahto|10|https:...ginal.jpg Suklaakeksi|rapeat|jauhot, sokeri, sulkaa, kananmuna, ruokasooda|45|https:..keksi.jpg
-
+</pre>
 Ensimmäinen rivi sisältää kenttänimet ja järjestyksen. Kentät on eroteltu | merkillä.
 
 ## Käyttöliittymä
